@@ -42,6 +42,8 @@
 		BD1FAA392CC03A56005BE437 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BD1FAA382CC03A56005BE437 /* FirebaseStorage */; };
 		BD1FAA3B2CC03A56005BE437 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BD1FAA3A2CC03A56005BE437 /* FirebaseStorageCombine-Community */; };
 		BD2BE7382CC9B09E00C29BAB /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE7372CC9B09E00C29BAB /* ImagenViewController.swift */; };
+		BD6DBEE72CD2953600C564CB /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBEE62CD2953600C564CB /* ElegirUsuarioViewController.swift */; };
+		BD7174722CD2A11B00EDC450 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7174712CD2A11B00EDC450 /* Usuario.swift */; };
 		BDFF75D72CC982BB00DD94D1 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF75D62CC982BB00DD94D1 /* SnapsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +57,10 @@
 		BD1FA9FB2CC032B2005BE437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1FA9FD2CC032B2005BE437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD1FAA032CC0361C005BE437 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BD2BE7372CC9B09E00C29BAB /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		BD2BE7372CC9B09E00C29BAB /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagenViewController.swift; path = ../ImagenViewController.swift; sourceTree = "<group>"; };
 		BD3AC9062CC95B7C0048246C /* AriasSnapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AriasSnapchat.entitlements; sourceTree = "<group>"; };
+		BD6DBEE62CD2953600C564CB /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ElegirUsuarioViewController.swift; path = ../ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		BD7174712CD2A11B00EDC450 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		BDFF75D62CC982BB00DD94D1 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,12 +121,11 @@
 		BD1FA9EE2CC032B0005BE437 /* AriasSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				BD71746E2CD29FF400EDC450 /* Modelos */,
+				BDA446F72CD29EBA007BC7BF /* ViewControllers */,
 				BD3AC9062CC95B7C0048246C /* AriasSnapchat.entitlements */,
 				BD1FA9EF2CC032B0005BE437 /* AppDelegate.swift */,
 				BD1FA9F12CC032B0005BE437 /* SceneDelegate.swift */,
-				BD1FA9F32CC032B0005BE437 /* iniciarSesionViewController.swift */,
-				BDFF75D62CC982BB00DD94D1 /* SnapsViewController.swift */,
-				BD2BE7372CC9B09E00C29BAB /* ImagenViewController.swift */,
 				BD1FA9F52CC032B0005BE437 /* Main.storyboard */,
 				BD1FA9F82CC032B2005BE437 /* Assets.xcassets */,
 				BD1FA9FA2CC032B2005BE437 /* LaunchScreen.storyboard */,
@@ -130,6 +133,25 @@
 				BD1FAA032CC0361C005BE437 /* GoogleService-Info.plist */,
 			);
 			path = AriasSnapchat;
+			sourceTree = "<group>";
+		};
+		BD71746E2CD29FF400EDC450 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				BD7174712CD2A11B00EDC450 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		BDA446F72CD29EBA007BC7BF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD2BE7372CC9B09E00C29BAB /* ImagenViewController.swift */,
+				BD6DBEE62CD2953600C564CB /* ElegirUsuarioViewController.swift */,
+				BDFF75D62CC982BB00DD94D1 /* SnapsViewController.swift */,
+				BD1FA9F32CC032B0005BE437 /* iniciarSesionViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +260,11 @@
 			files = (
 				BDFF75D72CC982BB00DD94D1 /* SnapsViewController.swift in Sources */,
 				BD2BE7382CC9B09E00C29BAB /* ImagenViewController.swift in Sources */,
+				BD7174722CD2A11B00EDC450 /* Usuario.swift in Sources */,
 				BD1FA9F42CC032B0005BE437 /* iniciarSesionViewController.swift in Sources */,
 				BD1FA9F02CC032B0005BE437 /* AppDelegate.swift in Sources */,
 				BD1FA9F22CC032B0005BE437 /* SceneDelegate.swift in Sources */,
+				BD6DBEE72CD2953600C564CB /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

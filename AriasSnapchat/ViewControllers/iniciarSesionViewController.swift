@@ -7,7 +7,7 @@
 
 import UIKit
 import FirebaseAuth
-
+import FirebaseDatabase
 class iniciarSesionViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,7 +22,15 @@ class iniciarSesionViewController: UIViewController {
                         print("Se presento el siguiente error al crear el usuario: \(error)")
                     } else {
                         print("El usuario fue creado exitosamente")
-                        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+                        
+                        Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
+                        
+                        let alerta = UIAlertController(title: "Creacion de usuario", message: "Usuario: \(self.emailTextField.text!) se creo correctamente.", preferredStyle: .alert)
+                        let btnOk = UIAlertAction(title: "Aceptar", style: .default, handler: {(UIAlertAction) in
+                            self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+                        })
+                        alerta.addAction(btnOk)
+                        self.present(alerta, animated: true, completion: nil)
                     }
                 })
             } else {
